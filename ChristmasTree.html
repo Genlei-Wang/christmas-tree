@@ -1169,7 +1169,7 @@
                 // 照片散开 - 只在状态改变时计算一次
                 photos.forEach(photo => {
                     if (photo.mesh && photo !== focusedPhoto && photo.isOnTree) {
-                        photo.targetScale = 0.5;
+                        photo.targetScale = 0.7; // 张开时放大照片，从0.5改为0.7
                         // 只在第一次散开时计算位置，避免每帧都变化
                         if (!photo.scatterPosition) {
                             photo.targetPosition = new THREE.Vector3(
@@ -1187,7 +1187,7 @@
                 });
                 if (focusedPhoto) {
                     focusedPhoto.isFocused = false;
-                    focusedPhoto.targetScale = 0.5;
+                    focusedPhoto.targetScale = 0.7; // 张开时放大照片，从0.5改为0.7
                     focusedPhoto.isOnTree = false; // 重置标记
                     focusedPhoto.scatterPosition = null;
                     focusedPhoto = null;
