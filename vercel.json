@@ -1,23 +1,9 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/ChristmasTree.html"
-    },
-    {
-      "src": "/ChristmasTree.html",
-      "dest": "/ChristmasTree.html"
-    },
-    {
-      "src": "/ChristmasTree-sphere.html",
-      "dest": "/ChristmasTree-sphere.html"
+      "source": "/",
+      "destination": "/ChristmasTree.html"
     }
   ],
   "headers": [
