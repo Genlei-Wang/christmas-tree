@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/ChristmasTree.html"
+    },
+    {
+      "src": "/ChristmasTree.html",
+      "dest": "/ChristmasTree.html"
+    },
+    {
+      "src": "/ChristmasTree-sphere.html",
+      "dest": "/ChristmasTree-sphere.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
+}
+

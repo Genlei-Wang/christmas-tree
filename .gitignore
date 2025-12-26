@@ -1,0 +1,22 @@
+# 调试文件
+.cursor/
+*.log
+debug.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 可选：忽略文档文件（如果只想部署HTML）
+# 解决方案说明.md
+# 部署指南.md
+# README.md
+# 备份.md
+# 创建圣诞树的详细方案.md
+
